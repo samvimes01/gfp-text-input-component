@@ -25,6 +25,7 @@ function App() {
         hint="This is a hint text."
         placeholder="name@email.com"
         endIcon="CircleHelp"
+        disabled
       />
       <TextInput
         type="email"
@@ -32,7 +33,7 @@ function App() {
         hint="This is a hint text."
         value="name@email.com"
         endIcon="CircleHelp"
-        error="This is an error message"
+        error="This is an error message."
       />
     </div>
   );
