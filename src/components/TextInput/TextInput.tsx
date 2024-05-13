@@ -32,7 +32,7 @@ function TextInput({
   const [val, setVal] = useState(value);
   const id = nanoid();
   const onValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!e?.target?.value) return;
+    if (e?.target?.value == null) return;
     setVal(e.target.value);
     if (onChange) {
       onChange(e.target.value);
